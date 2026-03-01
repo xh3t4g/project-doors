@@ -1,0 +1,166 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1A1F2B;
+        background-image: url('/project-root/assets/images/pattern_2000x2000_22.png');
+        background-repeat: repeat;
+        background-size: 50px 50px;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+
+    header * {
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        backdrop-filter: blur(4px);
+        background-color: #222933ad;
+        height: 64px;
+        border-radius: 0 0 10px 10px;
+        user-select: none;
+        box-shadow: 0 0 10px black;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        color: #E0E6F0;
+        font-size: 18px;
+    }
+
+    nav {
+        display: flex;
+        gap: 24px;
+    }
+
+    nav a {
+        color: #E0E6F0;
+        text-decoration: none;
+        transition: all 0.3s ease;    
+    }
+
+    nav a:hover {
+        color: #60A5FA;
+    }
+
+    main {
+        margin-top: 10px;
+        padding: 0 10px;
+        margin-bottom: 10px;
+    }
+
+    /* ========= ШАПКА СТРАНИЦЫ ⤴ ============ */
+
+    #card-list {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin: 0 auto; 
+        max-width: 1200px;
+        padding: 0 10px;
+    }
+
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        background-color: #2A3245;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+    .card img {
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        display: block;
+        border-radius: 12px;
+    }
+
+    .card-content * {
+        margin: 0 auto;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: #E0E6F0;
+    }
+
+    .card-button {
+        margin: 10px;
+        text-align: center;
+        padding: 6px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #3B82F6, #1E40AF);
+        background-size: 300% 300%;
+        text-decoration: none;
+        color: #fff;
+        transition: background-position 0.3s ease;
+    }
+
+    .card-button:hover {
+        background-position: right;
+    }
+
+
+    /* Планшет */
+    @media (max-width: 768px) {
+        #card-list {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+    }
+
+
+    /* Телефон */
+    @media (max-width: 480px) {
+        #card-list {
+            grid-template-columns: 1fr; /* одна колонка */
+            gap: 8px;
+        }
+    }
+
+
+
+
+    /* ========== ПОДВАЛ СТРАНИЦЫ ⤵ ============= */
+
+    footer {
+        background-color: #222933;
+        height: 48px;
+        border-radius: 10px 10px 0 0 ;
+
+
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        color: #4A5568;
+
+    }
+
+
+
+
+
