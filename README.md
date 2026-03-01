@@ -72,4 +72,4 @@ npm run dev
  - Подключить аналитику
 
 🌐 Демо
-<p align="center"> <a href="https://xh3t4g.github.io/project-doors/"> <img src="./screenshots/main-desktop.png" alt="Главная страница" width="500"/> </a> <br> <strong>Live Demo — Перейти на сайт проекта</strong> </p> <p align="center"> <img src="./screenshots/catalog-mobile.png" alt="Каталог на мобильном" width="250"/> <img src="./screenshots/catalog-desktop.png" alt="Каталог на ПК" width="250"/> </p> ```
+[Перейти на сайт](https://xh3t4g.github.io/project-doors/)
